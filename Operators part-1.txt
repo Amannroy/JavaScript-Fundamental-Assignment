@@ -1,0 +1,203 @@
+JavaScript Operators Part 1
+
+Q1.Explain the role of operators in JavaScript.Why are they essential in programming?
+
+Ans- Operators in JavaScript are symbols that perform operations on operands. Operands can be
+variables, values, or expressions. Operators are essential in prorammin because they allow us to manipulate
+data and perform calculations.
+They are essential in programming languages as it can be used to
+i) perform Arithmetic operation.
+ii) Assin operator.
+iii) Compare Operator.
+iv) Perform loical operations.
+
+Q2.Describe the categorization of operators in JavaScript based on their functionality. Provide examples for
+each category.
+
+Ans- Operators in JavaScript can be categorized based on their functionality into several groups. Here are the main categories:
+
+1. Arithmetic Operators:
+Perform basic arithmetic operations on numerical values.
+Examples:
+let a = 5;
+let b = 3;
+
+let sum = a + b;   // Addition
+let difference = a - b;  // Subtraction
+let product = a * b;   // Multiplication
+let quotient = a / b;   // Division
+let remainder = a % b;  // Modulo
+
+
+2. Assignment Operators:
+Assign values to variables.
+Examples:
+let x = 10;        // Assigns the value 10 to variable x
+let y = 5;
+
+x += y;            // Equivalent to: x = x + y
+
+
+
+3. Comparison Operators:
+Compare values and return a Boolean result.
+Examples:
+
+let p = 5;
+let q = 10;
+
+console.log(p == q);  // Equal to
+console.log(p != q);  // Not equal to
+console.log(p > q);   // Greater than
+console.log(p < q);   // Less than
+console.log(p >= q);  // Greater than or equal to
+console.log(p <= q);  // Less than or equal to
+
+
+4. Logical Operators:
+Perform logical operations on Boolean values.
+Examples:
+let isTrue = true;
+let isFalse = false;
+
+console.log(isTrue && isFalse);  // Logical AND
+console.log(isTrue || isFalse);  // Logical OR
+console.log(!isTrue);            // Logical NOT
+
+5. Unary Operators:
+Act on a single operand.
+Examples:
+let num = 5;
+
+console.log(-num);   // Unary minus
+console.log(++num);  // Increment by 1
+console.log(--num);  // Decrement by 1
+
+6. Conditional (Ternary) Operator:
+A shorthand for an if-else statement.
+Example:
+let age = 20;
+let message = (age >= 18) ? "Adult" : "Minor";
+
+Q3. Differentiate between unary, and binary operators in JavaScript. Give examples of each.
+
+Ans- In JavaScript, unary and binary operators are types of operators based on the number of operands they act upon.
+
+1. Unary Operators:
+Definition: Unary operators operate on a single operand (variable or value).
+
+Examples:
+let x = 5;
+
+// Unary Minus (-)
+let negation = -x;   // Result: negation = -5
+
+// Increment (++)
+let increment = ++x;  // Result: increment = 6
+
+// Decrement (--)
+let decrement = --x;  // Result: decrement = 5
+
+
+2. Binary Operators:
+Definition: Binary operators operate on two operands (variables or values).
+
+Examples:
+let a = 5;
+let b = 3;
+
+// Addition (+)
+let sum = a + b;   // Result: sum = 8
+
+// Multiplication (*)
+let product = a * b;  // Result: product = 15
+
+// Assignment (=)
+let assignment = a = b;  // Result: a is assigned the value of b
+
+
+Q4. Discuss the precedence and associativity of operators in JavaScript. Why is understanding these concepts important?
+Ans- Precedence and associativity are important concepts when working with multiple operators in JavaScript. They define the order in which operations are performed when an expression contains multiple operators.
+
+1. Precedence:
+Definition: Precedence determines the priority of operators. Operators with higher precedence are executed first.
+
+Example:
+Precedence and associativity are important concepts when working with multiple operators in JavaScript. They define the order in which operations are performed when an expression contains multiple operators.
+
+1. Precedence:
+Definition: Precedence determines the priority of operators. Operators with higher precedence are executed first.
+
+Example:
+
+let result = 5 + 3 * 2;  // Result: 11 (multiplication has higher precedence)
+
+
+
+In the example, the multiplication operation has higher precedence than addition, so it is performed first.
+
+Common Precedence Levels:
+
+Parentheses have the highest precedence.
+Multiplication, division, and modulo have higher precedence than addition and subtraction.
+Comparison operators have lower precedence than arithmetic operators.
+Assignment operators have lower precedence than arithmetic and comparison operators.
+2. Associativity:
+Definition: Associativity determines the order of evaluation when operators of the same precedence appear consecutively.
+
+Example:
+let result = 5 + 3 - 2;  // Result: 6 (left-to-right associativity)
+
+In the example, addition and subtraction have the same precedence, and they are evaluated from left to right due to left-to-right associativity.
+
+Common Associativity:
+
+Most operators in JavaScript are left-to-right associative, meaning they are evaluated from left to right if they have the same precedence.
+Importance of Understanding Precedence and Associativity:
+Correctness of Expressions:
+
+Understanding precedence ensures that expressions are evaluated correctly. It helps avoid unexpected results due to operators being executed in an unintended order.
+Code Readability:
+
+Code readability is improved when expressions follow a logical order of evaluation. This makes it easier for developers to understand the code and its intended behavior.
+Avoiding Errors:
+
+Misunderstanding precedence and associativity can lead to errors in the logic of your code. A clear understanding helps in writing error-free expressions.
+Efficient Coding:
+
+Knowing the precedence allows for writing more concise and efficient code, reducing the need for excessive parentheses to clarify the order of operations.
+Debugging:
+
+When debugging, understanding precedence and associativity helps identify and fix issues related to the order of operations in complex expressions.
+
+
+
+Q5. Write a JavaScript program that calculates the simple interest using the formula Simple interest =
+(principal * rate * time) / 100.
+
+Ans- const principal = 1000
+const rate = 5
+const time = 2
+const result = (principal * rate * time)/100
+console.log("Simple Interest =", result)
+
+Q6. Write a Javascript program to calculate the Body Mass Index (BMI) using the formula BMI = weight (kg)/
+height * height.
+
+Ans- const height = 160
+const weight = 55
+const BMI = weight/height * height
+console.log("BMI =", BMI)
+
+
+Q7. Write a program in JavaScript to calculate the area of a circle given its radius value of 10. Use appropriate
+arithmetic operators.
+
+Ans- const radius = 10;
+
+// Calcultaing the area of the circle: area = pi * radius^2
+const pi = Math.PI
+const area = pi * Math.pow(radius, 2)
+console.log("Area of the circle:", area); 
+
+
